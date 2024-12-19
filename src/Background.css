@@ -1,0 +1,93 @@
+body{
+    overflow-x: hidden !important;
+}
+.main{
+    height: 100vh;
+    /* background-color: #0E1542; */
+    /* background: linear-gradient(75deg, #0F1229, #0E1A77); */
+    position: relative;
+    color: white;
+    
+}
+.main2{
+    height: 100vh;
+    background: linear-gradient(75deg, #0F1229, #0E1A77);
+    color: white;
+    z-index: 333;
+    position: absolute;
+}
+
+
+.nav{
+    padding: 1rem;
+}
+
+.cle{
+
+    transition: all 0.5s;
+}
+.cle:hover{
+background-color: white;
+color: blue;
+}
+
+.list1{
+    display: none;
+}
+
+.list2{
+    display: flex;
+}
+
+.back-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.netsolpk.com/images/ascentVector.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    transform: translateY(180%);
+    display: none;
+
+}
+
+.links li a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+.links a:hover{
+    color: #3972B8;
+}
+
+
+
+@media (max-width:990px){
+    .list1{
+        display: flex;
+    }
+    .list2{
+        display: none;
+    }
+
+}
+
+@media (max-width:220px){
+    .nav{
+        padding: 0.1rem;
+        /* width: 100% !important; */
+    }
+    .main{
+        padding: 4px;
+    }
+}
